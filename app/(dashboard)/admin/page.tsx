@@ -1,5 +1,6 @@
 import AttendanceChart from "@/components/AttendanceChart";
 import CountChart from "@/components/CountChart";
+import FinanceChart from "@/components/FinanceChart";
 import UserCard from "@/components/UserCard";
 
 function AdminPage() {
@@ -27,7 +28,9 @@ function AdminPage() {
         </div>
 
         {/* BOTTOM CHARTS */}
-        <div className="flex flex-col lg:flex-row gap-4 "></div>
+        <div className="w-full h-[500px] ">
+          <FinanceChart />
+        </div>
 
       </div>
 
