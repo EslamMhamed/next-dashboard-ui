@@ -1,4 +1,5 @@
 import Announcements from "@/components/Announcements"
+import BigCalendar from "@/components/BigCalendar"
 import EventCalender from "@/components/EventCalender"
 
 function StudentPage() {
@@ -8,6 +9,7 @@ function StudentPage() {
         <div className="w-full xl:w-2/3">
           <div className="h-full rounded-md bg-white p-4">
             <h1 className="text-xl font-semibold">Schedule (4A)</h1>
+            <BigCalendar />
           </div>
         </div>
       {/* Right */}
