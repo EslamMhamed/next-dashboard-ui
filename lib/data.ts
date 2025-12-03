@@ -331,7 +331,7 @@ export const parentsData = [
   },
 ];
 
-export const subjectsData = [
+export const subjectsData = [ 
   {
     id: 1,
     name: "Math",
