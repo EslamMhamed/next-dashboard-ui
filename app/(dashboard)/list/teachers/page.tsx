@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
@@ -75,9 +76,11 @@ function TeacherListPage() {
             </button>
           </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
-              <Image src="/delete.png" alt="view" height={16} width={16} />
-            </button>
+            // <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
+            //   <Image src="/delete.png" alt="view" height={16} width={16} />
+            // </button>
+              <FormModal table="teacher" type="delete" id={item.id} />
+
           )}
         </div>
       </td>
@@ -99,9 +102,10 @@ function TeacherListPage() {
               <Image src="/sort.png" alt="filter" width={14} height={14} />
             </button>
             {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
-                <Image src="/sort.png" alt="filter" width={14} height={14} />
-              </button>
+              // <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
+              //   <Image src="/create.png" alt="filter" width={14} height={14} />
+              // </button>
+              <FormModal table="teacher" type="create" />
             )}
           </div>
         </div>
